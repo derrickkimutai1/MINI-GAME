@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Reef Rescue | HTML5 Canvas Graphics Pipeline</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">HTML5 Canvas graphics pipeline demo</p>
+          <h1>Neon Reef Rescue</h1>
+        </div>
+
+        <div class="actions" aria-label="Game controls">
+          <button id="soundToggle" type="button" aria-pressed="false">Sound Off</button>
+          <button id="resetButton" type="button">Restart</button>
+        </div>
+      </header>
+
+      <section class="stage" aria-label="Interactive canvas application">
+        <div class="canvas-frame">
+          <canvas
+            id="reefCanvas"
+            width="960"
+            height="600"
+            tabindex="0"
+            aria-label="Neon Reef Rescue canvas game"
+          ></canvas>
+        </div>
+
+        <aside class="dashboard" aria-label="Game status">
+          <div class="stat">
+            <span>Score</span>
+            <strong id="scoreValue">0</strong>
+          </div>
+          <div class="stat">
+            <span>Reef Health</span>
+            <strong id="healthValue">100%</strong>
+          </div>
+          <div class="stat">
+            <span>Debris Cleared</span>
+            <strong id="rescuedValue">0</strong>
+          </div>
+          <div class="status-line" id="statusLine">Reef scan active</div>
+        </aside>
+      </section>
+
+      <footer>
+        Built with HTML5 Canvas, CSS, and JavaScript only. No external libraries.
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
